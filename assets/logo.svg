@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#0a0e1a"/>
+    </radialGradient>
+  </defs>
+  <rect width="256" height="256" fill="#0a0e1a"/>
+
+  <!-- Outer circuit frame (sharp, off-center square) -->
+  <polygon points="22,38 234,30 238,226 30,234" fill="none" stroke="#e6f1ff" stroke-width="1.5" opacity="0.35"/>
+  <polygon points="32,50 222,44 226,214 40,220" fill="none" stroke="#39ff14" stroke-width="1" opacity="0.25"/>
+
+  <!-- Circuit traces wrapping the joystick/brain -->
+  <polyline points="46,72 70,72 70,96 92,96" fill="none" stroke="#39ff14" stroke-width="2" opacity="0.7"/>
+  <polyline points="46,104 62,104 62,128 84,128" fill="none" stroke="#39ff14" stroke-width="2" opacity="0.5"/>
+  <polyline points="210,88 186,88 186,112 164,112" fill="none" stroke="#39ff14" stroke-width="2" opacity="0.7"/>
+  <polyline points="210,140 190,140 190,164 168,164" fill="none" stroke="#39ff14" stroke-width="2" opacity="0.5"/>
+  <circle cx="92" cy="96" r="2.5" fill="#39ff14"/>
+  <circle cx="84" cy="128" r="2.5" fill="#39ff14"/>
+  <circle cx="164" cy="112" r="2.5" fill="#39ff14"/>
+  <circle cx="168" cy="164" r="2.5" fill="#39ff14"/>
+
+  <!-- Joystick shaft -->
+  <polygon points="120,128 136,128 138,172 118,172" fill="#0a0e1a" stroke="#e6f1ff" stroke-width="2"/>
+  <!-- Shaft highlight -->
+  <line x1="124" y1="132" x2="124" y2="168" stroke="#e6f1ff" stroke-width="1" opacity="0.4"/>
+
+  <!-- Joystick base (angular) -->
+  <polygon points="96,174 160,174 168,196 88,196" fill="#0a0e1a" stroke="#e6f1ff" stroke-width="2"/>
+  <line x1="104" y1="182" x2="152" y2="182" stroke="#ff2e88" stroke-width="2" opacity="0.8"/>
+  <line x1="100" y1="188" x2="156" y2="188" stroke="#39ff14" stroke-width="2" opacity="0.6"/>
+
+  <!-- Brain shape rendered as angular circuit blob on top of joystick -->
+  <path d="M128 40 
+           L146 48 L156 40 L168 52 L176 48 L182 62 L178 78 
+           L186 88 L178 100 L182 114 L168 118 L160 112 
+           L148 122 L136 118 L128 128 L120 118 L108 122 
+           L96 112 L88 118 L74 114 L78 100 L70 88 
+           L78 78 L74 62 L80 48 L92 52 L104 40 
+           L114 48 Z" 
+        fill="#0a0e1a" stroke="#ff2e88" stroke-width="2.5" stroke-linejoin="miter"/>
+
+  <!-- Brain internal circuit nodes -->
+  <circle cx="128" cy="72" r="3" fill="#39ff14"/>
+  <circle cx="106" cy="88" r="3" fill="#39ff14"/>
+  <circle cx="150" cy="88" r="3" fill="#39ff14"/>
+  <circle cx="116" cy="104" r="3" fill="#39ff14"/>
+  <circle cx="140" cy="104" r="3" fill="#39ff14"/>
+
+  <!-- Internal brain circuitry -->
+  <polyline points="128,72 106,88 116,104 128,98 140,104 150,88 128,72" fill="none" stroke="#39ff14" stroke-width="1.5" opacity="0.8"/>
+  <line x1="128" y1="72" x2="128" y2="96" stroke="#e6f1ff" stroke-width="1" opacity="0.5"/>
+
+  <!-- Pulsing crosshair overlay -->
+  <polygon points="128,52 131,60 139,60 133,66 136,74 128,69 120,74 123,66 117,60 125,60" fill="none" stroke="#e6f1ff" stroke-width="1.5"/>
+  <line x1="128" y1="44" x2="128" y2="52" stroke="#e6f1ff" stroke-width="1.5"/>
+  <line x1="128" y1="74" x2="128" y2="82" stroke="#e6f1ff" stroke-width="1.5"/>
+  <line x1="104" y1="64" x2="112" y2="64" stroke="#e6f1ff" stroke-width="1.5"/>
+  <line x1="144" y1="64" x2="152" y2="64" stroke="#e6f1ff" stroke-width="1.5"/>
+
+  <!-- Crosshair pulse ring -->
+  <circle cx="128" cy="64" r="14" fill="none" stroke="#ff2e88" stroke-width="1" opacity="0.5"/>
+
+  <!-- Neuro wordmark, small -->
+  <text x="128" y="242" font-family="monospace" font-size="12" fill="#e6f1ff" text-anchor="middle" letter-spacing="6" opacity="0.6">NEURO</text>
+</svg>
